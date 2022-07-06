@@ -15,3 +15,10 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >3. JDK & JDBC
 >> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use
+Our experiments consist of 6 sub-experiments, as fowwlows:
+> 1. main experiment
+> 2. synthetic experiment with Armstrong relation
+> 3. real-world experiment to show performance of keys
+> 4. experiments on TPC-H benchmark
+> 5. algorithmic performance test on Alg.1 and Alg.2 over lineitem dataset
+> 6. lossless join decompisition algorithm experiment
