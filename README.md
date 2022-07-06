@@ -12,8 +12,6 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >> First, we use MySQL 8.0 as databases software. Then you need create a database call "freeman". Afterwards, import 14 datasets into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets. Also, you need create a column named "id" as a auto_increment attribute for each table.
 > 2. import TPC-H benchmark into MySQL
 >> As introduced above, you need visit the website and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL.
->3. JDK
->> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later.
->4. JDBC
->> We use JDBC(version 8.0.26) as a connector to access MySQL databases.
+>3. JDK & JDBC
+>> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use
