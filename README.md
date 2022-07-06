@@ -17,7 +17,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >4. JDK & JDBC
 >> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use for experiments
-Our experiments consist of 6 sub-experiments, as follows:
+Our experiments consist of 6 sub-experiments. For each sub-experiment, you can run different codes to start, as follows:
 > 1. main experiments
 >> Before running main experiments, we can set some parameters in <kbd>conf.Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf.Main.java</kbd> to start main experiments.
 > 2. synthetic experiments with Armstrong relation
