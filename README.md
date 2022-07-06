@@ -21,7 +21,9 @@ Our experiments consist of 6 sub-experiments, as follows:
 > 1. main experiments
 >> Before running main experiments, we can set some parameters in <kbd>conf.Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf.Main.java</kbd> to start main experiments.
 > 2. synthetic experiments with Armstrong relation
+>> You can find the code in <kbd>conf.KeyNumExp.java</kbd> and set some variables in main function. After all these done, you can run the class to execute the experiments.
 > 3. real-world experiments to show performance of keys
+>> In this experiments, you need set up dataset sources in <kbd>conf.Constant.java</kbd>. Then set some options in main function of <kbd>conf.RealWorldSelectAndUpdate.java</kbd> and finally run the class to start this experiments.
 > 4. experiments on TPC-H benchmark
 > 5. algorithmic performance tests on Alg.1 and Alg.2 over lineitem dataset
 > 6. lossless join decomposition algorithm experiments
