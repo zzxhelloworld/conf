@@ -18,10 +18,10 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use
 Our experiments consist of 6 sub-experiments, as follows:
-> 1. main experiment
->> Befor running main experimenst, we can set some parameters in <kbd>conf.Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can <kbd>conf.Main.java</kbd> to run main experiments.
-> 2. synthetic experiment with Armstrong relation
-> 3. real-world experiment to show performance of keys
+> 1. main experiments
+>> Before running main experiments, we can set some parameters in <kbd>conf.Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf.Main.java</kbd> to start main experiments.
+> 2. synthetic experiments with Armstrong relation
+> 3. real-world experiments to show performance of keys
 > 4. experiments on TPC-H benchmark
-> 5. algorithmic performance test on Alg.1 and Alg.2 over lineitem dataset
-> 6. lossless join decomposition algorithm experiment
+> 5. algorithmic performance tests on Alg.1 and Alg.2 over lineitem dataset
+> 6. lossless join decomposition algorithm experiments
