@@ -8,4 +8,12 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 > 2. TPC-H benchmark experiment
 >> While for experiments over TPC-H benchmark, you can find data sets stored in databases with the link(https://relational.fit.cvut.cz/dataset/TPCH), which is 2G-sized data. You can follow instructions to export TPC-H databases into your own local databases.
 # What to need to do before running code
+> 1. setup databases for 14 datasets
+>> First, we use MySQL 8.0 as databases software. Then you need create a database call "freeman". Afterwards, import 14 datasets into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets.
+> 2. import TPC-H benchmark into MySQL
+>> As introduced above, you need visit the website and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL.
+>3. JDK
+>> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later.
+>4. JDBC
+>> We use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use
