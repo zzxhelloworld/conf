@@ -1,7 +1,7 @@
 # Introduction
 Here are source codes involving some experiments on study of Composite Object Normal Form(CONF).
-Firstly we implement our proposed lossless FD-preserved decomposition algorithm(alg1 at <kbd>conf.CONF.java</kbd>).
-Then, we implement 3 algorithms to compare with as our paper introduced, that is, alg2(<kbd>conf.CONF_Comp.java</kbd>), alg3(<kbd>conf.CONF_3NF.java</kbd>) and alg4(<kbd>conf.CONF_Basic.java</kbd>). Besides, we also implement some experiments.
+Firstly we implement our proposed lossless FD-preserved decomposition algorithm(alg1 at <kbd>conf/CONF.java</kbd>).
+Then, we implement 3 algorithms to compare with as our paper introduced, that is, alg2(<kbd>conf/CONF_Comp.java</kbd>), alg3(<kbd>conf/CONF_3NF.java</kbd>) and alg4(<kbd>conf/CONF_Basic.java</kbd>). Besides, we also implement some experiments.
 # Data sets
 > 1. main experiment
 >> For the main experiments,we compare 4 algorithms over 14 datasets. The datasets are available at https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html
@@ -19,12 +19,13 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 # How to use for experiments
 Our experiments consist of 6 sub-experiments. For each sub-experiment, you can run different codes to start, as follows:
 > 1. main experiments
->> Before running main experiments, we can set some parameters in <kbd>conf.Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf.Main.java</kbd> to start main experiments.
+>> Before running main experiments, we can set some parameters in <kbd>conf/Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf/Main.java</kbd> to start main experiments.
 > 2. synthetic experiments with Armstrong relation
->> You can find the code in <kbd>conf.KeyNumExp.java</kbd> and set some variables in main function. After all these done, you can run the class to execute the experiments.
+>> You can find the code in <kbd>conf/KeyNumExp.java</kbd> and set some variables in main function. After all these done, you can run the class to execute the experiments.
 > 3. real-world experiments to show performance of keys
->> In this experiments, you need set up dataset sources in <kbd>conf.Constant.java</kbd>. Then set some options in main function of <kbd>conf.RealWorldSelectAndUpdate.java</kbd> and finally run the class to start this experiments.
+>> In this experiments, you need set up dataset sources in <kbd>conf/Constant.java</kbd>. Then set some options in main function of <kbd>conf/RealWorldSelectAndUpdate.java</kbd> and finally run the class to start this experiments.
 > 4. experiments on TPC-H benchmark
->> For the TPC-H bencemark experiments, we pre-set some minimal keys in function <kbd>get_table_uniques_from_TPCH()</kbd> of <kbd>additional.KeyNumExpOnTPCBenchmark.java</kbd>. For running, you just need set up some parameters in main funtion and then start.
+>> For the TPC-H bencemark experiments, we pre-set some minimal keys in function <kbd>get_table_uniques_from_TPCH()</kbd> of <kbd>additional/KeyNumExpOnTPCBenchmark.java</kbd>. For running, you just need set up some parameters in main funtion and then start.
 > 5. algorithmic performance tests on Alg.1 and Alg.2 over lineitem dataset
+>> The performance comparison over Alg.1 and Alg.2 will be done at <kbd>additional/SubschemaPerfExp.java</kbd>. Before starting experiments, you should only copy decomposition results(from previous main experiments) that are sub-schemas in BCNF, into a new file, respectively. Then configure the main function and start.
 > 6. lossless join decomposition algorithm experiments
