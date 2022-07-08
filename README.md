@@ -11,7 +11,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 > 1. setup databases for 14 datasets
 >> First, we use MySQL 8.0 as databases software. Then you need create a database call "freeman". Afterwards, import 14 datasets into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets. Also, you need create a column named "id" as an auto_increment attribute for each table.
 > 2. TPC-H benchmark
->> As introduced above, you need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit [TPC-H official documents](https://www.tpc.org/tpc_documents_current_versions/pdf/tpc-h_v3.0.0.pdf) to get all 22 official sql queries and refresh functions there.
+>> As introduced above, you need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit <kbd>experiment data/TPCH experiments/</kbd> to get all 22 official sql queries and refresh functions here.
 >3. functional dependencies
 >> Due to the 14 datasets, we compute all atomic FDs that are in <kbd>experiment data/FD</kbd> and then use if needed. While for TPC-H benchmark, we have set FDs in codes.
 >4. JDK & JDBC
