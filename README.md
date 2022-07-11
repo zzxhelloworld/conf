@@ -7,7 +7,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 > 1. setup databases for 14 datasets
 >> First, we use MySQL 8.0 as databases workbench. Then you need create a database called "freeman". Afterwards, import [14 datasets](https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html) into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets. Also, you need create a column named "id" as an auto_increment attribute for each table.
 > 2. import TPC-H benchmark
->> You need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/TPC-H/</kbd> to get all 22 official sql queries and refresh functions here.
+>> You need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/TPC-H/</kbd> to get all 22 official sql queries and refresh functions here for later experiments.
 >3. functional dependencies
 >> Given the 14 datasets, we compute all atomic FDs that are in <kbd>Artifact/03 - FD/</kbd> and then use if needed. While for TPC-H benchmark, we have set FDs in codes.
 >4. JDK & JDBC
