@@ -1,8 +1,8 @@
 # Introduction
 Here are our artifacts (e.g., source codes, experimental results, and other materials) involving some experiments on study of Composite Object Normal Form(CONF).\
 &nbsp;&nbsp;&nbsp;&nbsp;Firstly we implement our proposed lossless FD-preserved decomposition algorithm(Alg.1 at <kbd>conf/CONF.java</kbd>).
-Then, we implement 3 algorithms to compare with as our paper introduced, that is, Alg.2(<kbd>conf/CONF_Comp.java</kbd>), Alg.3(<kbd>conf/CONF_3NF.java</kbd>) and Alg.4(<kbd>conf/CONF_Basic.java</kbd>). We also implement some experiments by codes in <kbd>conf/</kbd> and <kbd>additional/</kbd>. For all experimental results, logs and some sql scripts, please see <kbd>Artifact/02 - Experiments/</kbd>. Besides, we give our one page for the missing proof at <kbd>Artifact/01 - Proofs/</kbd>.\
-&nbsp;&nbsp;&nbsp;&nbsp;For how to reproduce our experiments, please see following sections.
+Then, we implement 3 algorithms to compare with as our paper introduced, that is, Alg.2(<kbd>conf/CONF_Comp.java</kbd>), Alg.3(<kbd>conf/CONF_3NF.java</kbd>) and Alg.4(<kbd>conf/CONF_Basic.java</kbd>). We also implement some experiments by codes in <kbd>conf/</kbd> and <kbd>additional/</kbd>. For all experimental results, logs and some sql scripts, please see <kbd>Artifact/02 - Experiments/</kbd>. At last, we give our one page for the missing proof at <kbd>Artifact/01 - Proofs/</kbd>.\
+&nbsp;&nbsp;&nbsp;&nbsp;While for how to reproduce our experiments, please see following sections.
 # Data sets
 > 1. 14 data sets
 >> The datasets are available at https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html
