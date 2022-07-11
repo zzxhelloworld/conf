@@ -17,7 +17,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >4. JDK & JDBC
 >> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use for experiments
-Our experiments consist of 5 sub-experiments. For some of sub-experiments, you can run different codes to start, as follows:
+Our experiments consist of 5 sub-experiments. For some of sub-experiments, you can run different codes/scripts to start, as follows:
 >1. Number of Keys on Real-World Schemata
 >> In this experiments, we connected to [the relational data
 repository](https://relational.fit.cvut.cz) to check how many uniqueness constraints are specified on public data sets. Some results are available in <kbd>Artifact/02 - Experiments/1 - Number of Keys on Real-World Schemata/</kbd>.
