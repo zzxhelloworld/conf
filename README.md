@@ -5,7 +5,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 # Data sets
 > 1. 14 data sets
 >> The datasets are available at https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html
-> 2. TPC-H benchmark experiment
+> 2. TPC-H benchmark
 >> While for experiments over TPC-H benchmark, you can find data sets stored in databases [here](https://relational.fit.cvut.cz/dataset/TPCH), which is 2G-sized data. You can follow instructions to export TPC-H databases into your own local databases.
 # What to need to do before running codes
 > 1. setup databases for 14 datasets
