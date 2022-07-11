@@ -7,7 +7,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >> The datasets are available at https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html
 > 2. TPC-H benchmark
 >> While for experiments over TPC-H benchmark, you can find data sets stored in databases [here](https://relational.fit.cvut.cz/dataset/TPCH), which is 2G-sized data. You can follow instructions to export TPC-H databases into your own local databases.
-# What to need to do before running codes
+# Preliminaries
 > 1. setup databases for 14 datasets
 >> First, we use MySQL 8.0 as databases software. Then you need create a database called "freeman". Afterwards, import 14 datasets into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets. Also, you need create a column named "id" as an auto_increment attribute for each table.
 > 2. TPC-H benchmark
@@ -16,7 +16,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 >> Given the 14 datasets, we compute all atomic FDs that are in <kbd>Artifact/03 - FD/</kbd> and then use if needed. While for TPC-H benchmark, we have set FDs in codes.
 >4. JDK & JDBC
 >> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
-# How to use for experiments
+# Experiments
 Our experiments consist of 5 sub-experiments. For some of sub-experiments, you can run different codes/scripts to start, as follows:
 >1. Number of Keys on Real-World Schemata
 >> In this experiments, we connected to [the relational data
