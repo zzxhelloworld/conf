@@ -20,7 +20,19 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 Our experiments consist of 5 sub-experiments. For some of sub-experiments, you can run different codes to start, as follows:
 >1. Number of Keys on Real-World Schemata
 >> In this experiments, we connected to [the relational data
-repository](https://relational.fit.cvut.cz) to check how many uniqueness constraints are specified on public data sets. 
+repository](https://relational.fit.cvut.cz) to check how many uniqueness constraints are specified on public data sets. Some results are available in <kbd>Artifact/02 - Experiments/1 - Number of Keys on Real-World Schemata/</kbd>.
+>2. Why to minimize 3NF schemata
+>> To conduct this experiment, you need set up dataset sources as the lineitem dataset in <kbd>conf/Constant.java</kbd>. Then set some options in main function of <kbd>conf/RealWorldSelectAndUpdate.java</kbd> and finally run the class to start this experiments. We include experimental results in <kbd>Artifact/02 - Experiments/2 - Why to minimize 3NF schemata/</kbd>
+> 3. Performance of n-CONF
+>> 3.1 Armstrong relations
+>>> You can find the code in <kbd>conf/KeyNumExp.java</kbd> and set some variables in main function. After all these done, you can run the class to execute the experiments. For our experimental results and graphs, please see <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/Armstrong relations/</kbd>.
+>> 3.2 TPC-H benchmark
+>>> For the TPC-H bencemark experiments, we pre-set some minimal keys in function <kbd>get_table_uniques_from_TPCH()</kbd> of <kbd>additional/KeyNumExpOnTPCBenchmark.java</kbd>. For running, you just need set up some parameters in main funtion and then start. Also, we include some our experimental statistics in <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/TPC-H/</kbd>.
+> 4. Performance of Algorithms
+>> 4.1 Real-world
+>>> Before running the experiments, we can set some parameters in <kbd>conf/Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf/Main.java</kbd> to start the experiments. Our results are shown in <kbd>Artifact/02 - Experiments/4 - Performance of Algorithms/Real-world/</kbd>.
+>> 4.2 Lineitem
+>> 4.3 RunningExample
 > 1. main experiments
 >> Before running main experiments, we can set some parameters in <kbd>conf/Constant.java</kbd> to access some datasets and to turn on/off other switches. Afterwards, you can run <kbd>conf/Main.java</kbd> to start main experiments.
 > 2. synthetic experiments with Armstrong relation
