@@ -13,7 +13,7 @@ Then, we implement 3 algorithms to compare with as our paper introduced, that is
 > 2. TPC-H benchmark
 >> As introduced above, you need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/TPC-H/</kbd> to get all 22 official sql queries and refresh functions here.
 >3. functional dependencies
->> Due to the 14 datasets, we compute all atomic FDs that are in <kbd>Artifact/03 - FD/</kbd> and then use if needed. While for TPC-H benchmark, we have set FDs in codes.
+>> Given the 14 datasets, we compute all atomic FDs that are in <kbd>Artifact/03 - FD/</kbd> and then use if needed. While for TPC-H benchmark, we have set FDs in codes.
 >4. JDK & JDBC
 >> Our codes were programmed using JAVA. As a consequence, you need specify a JDK with version 8 or later. At the moment, we use JDBC(version 8.0.26) as a connector to access MySQL databases.
 # How to use for experiments
