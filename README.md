@@ -3,16 +3,11 @@ Here are our artifacts (e.g., source codes, experimental results, and other mate
 &nbsp;&nbsp;&nbsp;&nbsp;Firstly we implement our proposed lossless FD-preserved decomposition algorithm(Alg.1 at <kbd>conf/CONF.java</kbd>).
 Then, we implement 3 algorithms to compare with as our paper introduced, that is, Alg.2(<kbd>conf/CONF_Comp.java</kbd>), Alg.3(<kbd>conf/CONF_3NF.java</kbd>) and Alg.4(<kbd>conf/CONF_Basic.java</kbd>). We also implement some experiments by codes in <kbd>conf/</kbd> and <kbd>additional/</kbd>. For all experimental results, logs and some sql scripts, please see <kbd>Artifact/02 - Experiments/</kbd>. At last, we give our one page for the missing proof at <kbd>Artifact/01 - Proofs/</kbd>.\
 &nbsp;&nbsp;&nbsp;&nbsp;While for how to reproduce our experiments, please see following sections.
-# Data sets
-> 1. 14 data sets
->> The datasets are available at https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html
-> 2. TPC-H benchmark
->> While for experiments over TPC-H benchmark, you can find data sets stored in databases [here](https://relational.fit.cvut.cz/dataset/TPCH), which is 2G-sized data. You can follow instructions to export TPC-H databases into your own local databases.
 # Preliminaries
 > 1. setup databases for 14 datasets
->> First, we use MySQL 8.0 as databases software. Then you need create a database called "freeman". Afterwards, import 14 datasets into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets. Also, you need create a column named "id" as an auto_increment attribute for each table.
-> 2. TPC-H benchmark
->> As introduced above, you need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/TPC-H/</kbd> to get all 22 official sql queries and refresh functions here.
+>> First, we use MySQL 8.0 as databases workbench. Then you need create a database called "freeman". Afterwards, import [14 datasets](https://hpi.de/naumann/projects/repeatability/data-profiling/fds.html) into databases and set column name as 0,1,...,n-1 where n is the number of column of datasets. Also, you need create a column named "id" as an auto_increment attribute for each table.
+> 2. import TPC-H benchmark
+>> You need visit the [website](https://relational.fit.cvut.cz/dataset/TPCH) and export TPC-H database in form of .sql file. Then, just import it into your own local MySQL. Also, you need to visit <kbd>Artifact/02 - Experiments/3 - Performance of n-CONF/TPC-H/</kbd> to get all 22 official sql queries and refresh functions here.
 >3. functional dependencies
 >> Given the 14 datasets, we compute all atomic FDs that are in <kbd>Artifact/03 - FD/</kbd> and then use if needed. While for TPC-H benchmark, we have set FDs in codes.
 >4. JDK & JDBC
