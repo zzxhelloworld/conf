@@ -1,4 +1,4 @@
-# Introduction
+# Introductions
 This repository contains various artifacts, such as source code, experimental results, and other materials, that supplement our work on the Composite Object Normal Form (CONF).\
 &nbsp;&nbsp;&nbsp;&nbsp;Foremost, the repository contains an implementation of the lossless FD-preserving decomposition algorithm (Alg.1 at <kbd>conf/CONF.java</kbd>) we have proposed. Subsequently, we have implemented an additional three algorithms that allow us to compare Alg. 1 with previous state-of-the-art algorithms: Alg. 2(<kbd>conf/CONF_Comp.java</kbd>), Alg. 3(<kbd>conf/CONF_3NF.java</kbd>) and Alg. 4(<kbd>conf/CONF_Basic.java</kbd>). We have also included the code of implementations for other experiments: <kbd>conf/</kbd> and <kbd>additional/</kbd>. For all experimental results, logs and some sql scripts are included, too (<kbd>Artifact/02 - Experiments/</kbd>). Finally, we have also included the proofs of Theorems we could not fit into the paper due to page restrictions <kbd>Artifact/01 - Proofs/</kbd>.\
 &nbsp;&nbsp;&nbsp;&nbsp;In the following sections, we describe how our experiments can be reproduced. 
